@@ -5,8 +5,8 @@ RUN apk add --no-cache curl && \
     tar -xf jotta-cli-0.5.15025_linux_x86.tar.gz -C / && \
     rm jotta-cli*.tar.gz && \
     mkdir /var/lib/jottad
-RUN addgroup -S jottagroup -g 1003 && \
-    adduser -S jottauser -G jottagroup && \
+RUN addgroup -g 1003 jottagrp && \
+    adduser -D -u 1003 -G jottagrp jottagrp && \
     chown 1003 /var/lib/jottad
 USER 1003
 CMD [ "jottad" ]
