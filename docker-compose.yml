@@ -11,3 +11,5 @@ services:
       - type: volume
         source: jottad_config
         target: /var/lib/jottad
+volumes:
+  jottad_config:
