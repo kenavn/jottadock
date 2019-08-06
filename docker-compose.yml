@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  jottad:
+    image: "kenavn/jottadock:latest"
+    volumes:
+      - type: bind
+        source: /share/Kenneth
+        target: /share/Kenneth
+        read_only: true
