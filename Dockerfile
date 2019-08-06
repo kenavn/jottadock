@@ -8,4 +8,4 @@ RUN apk add --no-cache curl && \
     chown 1 /var/lib/jottad
 USER 1
 VOLUME [ "/var/lib/jottad" ]
-CMD [ "jottad" ]
+CMD [ "jottad" ] 
