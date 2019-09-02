@@ -7,7 +7,27 @@ services:
         source: /share/Kenneth
         target: /share/Kenneth
         read_only: true
-      
+
+      - type: bind
+        source: /share/Cathrine
+        target: /share/Cathrine
+        read_only: true
+
+      - type: bind
+        source: /share/Multimedia
+        target: /share/Multimedia
+        read_only: true
+
+      - type: bind
+        source: /share/Public
+        target: /share/Public
+        read_only: true
+
+      - type: bind
+        source: /share/Retro
+        target: /share/Retro
+        read_only: true
+
       - type: volume
         source: jottad_config
         target: /var/lib/jottad
